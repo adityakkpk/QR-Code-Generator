@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #910aff;
+    --radus: 3px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: var(--primaryColor);
+}
+
+main {
+    width: 90%;
+    max-width: 400px;
+    /* height: 250px; */
+    background-color: #fff;
+    border-radius: var(--radus);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.show {
+    height: 550px;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid var(--primaryColor);
+    border-radius: var(--radus);
+}
+
+.error {
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: var(--radus);
+    cursor: pointer;
+    color: white;
+}
+
+.hint {
+    color: green;
+}
+
+.qr-code-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.qr-box {
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--radus);
+    border: 2px solid var(--primaryColor);
+}

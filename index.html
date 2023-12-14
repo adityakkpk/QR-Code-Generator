@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OR CODE GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <h2>Qr Code Generator</h2>
+        <input type="text" placeholder="Enter Text or Url" id="input">
+        <p class="error"></p>
+        <button id="generateBtn">Generate</button>
+        <p class="hint"></p>
+        <div class="qr-code-box hide">
+            <div class="qr-box">
+                <img src="" id="qr-img">
+            </div>
+            <button class="downloadBtn">Download</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
